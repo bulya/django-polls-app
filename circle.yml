@@ -29,5 +29,5 @@ deployment:
     commands:
       - docker login -u $DOCKER_USER -p $DOCKER_PASS -e $DOCKER_EMAIL
       - docker build --rm=false -t bulya/django-polls-app .
-      - docker push doomatel/django-polls-webapp
+      - docker push bulya/django-polls-app
       - ansible-playbook ../provisioning/server.yml -l prod -e env=prod -i ../provisioning/inventory/prod
