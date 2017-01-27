@@ -3,7 +3,7 @@ services:
   database:
     image: postgres:9.5
     ports:
-      - "5432:5432"
+      - "15432:5432"
     environment:
       - POSTGRES_DB=polls_db
   redis:
